@@ -1,0 +1,26 @@
+{
+  "name": "xtracode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joacimpalmx/xtracode.git"
+  },
+  "author": "Joacim Palm <palm.joacim@gmail.com>",
+  "license": "UNLICENCED",
+  "bugs": {
+    "url": "https://github.com/joacimpalmx/xtracode/issues"
+  },
+  "homepage": "https://github.com/joacimpalmx/xtracode#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cli": "^2.0.1",
+    "gulp-sass": "^4.0.1",
+    "node-sass": "^4.8.3"
+  }
+}

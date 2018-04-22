@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- <meta http-equiv="refresh" content="2"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/smoothScroll.js"></script>
+  <script src="js/menu.js"></script>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/contactform.css">
+  <link rel="stylesheet" href="css/queries.css">
   <link rel="stylesheet" href="css/grid.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald:200.300,400,500" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Righteous:200.300,400,500" rel="stylesheet">
@@ -15,160 +19,275 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div id="nav-bg">
-        <div class="row">
-          <ul class="main-nav">
-            <li>
-              <a href="#">home</a>
-            </li>
-            <li>
-              <a href="#">about</a>
-            </li>
-            <li>
-              <a href="#">portfolio</a>
-            </li>
-            <li>
-              <a href="#">work experience</a>
-            </li>
-            <li>
-              <a href="#">contact</a>
-            </li>
-          </ul>
-          <h2 class="logo">XTRA.<strong>CODE.</strong>
-          </h2>
+  <div class="site-wrapper">
+    <header id="home">
+      <nav>
+        <div id="nav-bg">
+          <div class="row">
+            <ul class="main-nav">
+              <li>
+                <a class="nav-link scroll" href="#home">home</a>
+              </li>
+              <li>
+                <a class="nav-link scroll" href="#about">about</a>
+              </li>
+              <li>
+                <a class="nav-link scroll" href="#portfolio">portfolio</a>
+              </li>
+              <li>
+                <a class="nav-link scroll" href="#workexperience">work experience</a>
+              </li>
+              <li>
+                <a class="nav-link scroll" href="#contact">contact</a>
+              </li>
+            </ul>
+            <h2 class="logo">JOACIM
+              <strong>PALM</strong>
+            </h2>
+          </div>
+        </div>
+      </nav>
+
+      <div class="dropdown">
+        <img class="dropbtn" src="images/icons/ham.svg" onclick="myFunction()">
+        <div class="dropdown-content" id="myDropdown">
+          <a class="nav-link scroll" href="#about">about</a>
+          <a class="nav-link scroll" href="#portfolio">portfolio</a>
+          <a class="nav-link scroll" href="#workexperience">my experience</a>
+          <a class="nav-link scroll" href="#contact">contact</a>
         </div>
       </div>
-    </nav>
-    <div class="hero-text-box">
-      <h1>We solve problems &
-        <strong>write amazing code</strong>
-      </h1>
-      <p class="hero-text-small">Your dreams becomes,
-        <i class="punchline">our mission.</i>
-      </p>
-      <a class="btn btn-full" href="#">Programming</a>
-      <a class="btn btn-ghost" href="#">Web Design</a>
-    </div>
-  </header>
 
-  <section class="section-features">
-    <div class="row">
-      <h2>Vestibulum ac &mdash; diam sit</h2>
-      <p class="long-copy">
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet
-        aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-      </p>
-    </div>
-
-    <div class="row">
-      <div class="col span-1-of-4 box">
-        <i class="fa fa-map-marker fa-3x"></i>
-        <h3>Proin eget tortor risus.</h3>
-        <p>
-          Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur
-          non nulla sit amet nisl tempus convallis quis ac lectus.
+      <div class="hero-text-box">
+        <h1 class="reveal">Sleek, Professional &
+          <strong class="reveal">amazing websites</strong>
+        </h1>
+        <p class="hero-text-small">Your vision,
+          <i class="punchline">becomes reality.</i>
         </p>
+        <a class="btn btn-full" href="#">Programming</a>
+        <a class="btn btn-ghost" href="#">Web Design</a>
       </div>
+    </header>
 
-      <div class="col span-1-of-4 box">
-        <i class="fa fa-map-marker fa-3x"></i>
-        <h3>Cras ultricies ligula.</h3>
-        <p>
-          Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet
-          nisl tempus convallis quis ac lectus.
-        </p>
-      </div>
-
-      <div class="col span-1-of-4 box">
-        <i class="fa fa-map-marker fa-3x"></i>
-        <h3>Vivamus magna justo.</h3>
-        <p>
-          Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Nulla
-          quis lorem ut libero malesuada feugiat.
-        </p>
-      </div>
-
-      <div class="col span-1-of-4 box">
-        <i class="fa fa-map-marker fa-3x"></i>
-        <h3>Mauris blandit aliquet.</h3>
-        <p>
-          Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-          Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-        </p>
-      </div>
-    </div>
-  </section>
-  <div class="row-bg-fill">
-    <div class="row">
-      <section class="section-footer">
-        <div class="col span-1-of-4 footer-headings">
-          <h4>XTRA.CODE. MARKET</h4>
-          <li class="footer-links">
-            <a href="#">Terms</a>
-          </li>
-          <li class="footer-links">
-            <a href="#">Licenses</a>
-          </li>
-          <li class="footer-links">
-            <a href="#">Market API</a>
-          </li>
-          <li class="footer-links">
-            <a href="#">Become an affiliate</a>
-          </li>
-        </div>
-
-        <div class="col span-1-of-4 footer-headings">
-          <h4>HELP</h4>
-          <li class="footer-links">
-            <a href="#">Themes and Templates</a>
-          </li>
-          <li class="footer-links">
-            <a href="#">Websites</a>
-          </li>
-          <li class="footer-links">
-            <a href="#">Authors</a>
-          </li>
-          <li class="footer-links">
-            <a href="#">Help Center</a>
-          </li>
-        </div>
-
-        <div class="col span-1-of-4 footer-headings">
-          <h4>JOIN OUR COMMUNITY</h4>
-          <li class="footer-links">
-            <a href="#">Community</a>
-          </li>
-          <li class="footer-links">
-            <a href="#">Blog</a>
-          </li>
-          <li class="footer-links">
-            <a href="#">Forums</a>
-          </li>
-          <li class="footer-links">
-            <a href="#">Meetups</a>
-          </li>
-        </div>
-
-        <div class="col span-1-of-4 footer-headings">
-          <h2 class="footer-logo">xtra.<span style="color: #f53b57">code.</span></h2>
-        </div>
-      </section>
+    <section class="section-features" id="about">
       <div class="row">
-        <div class="col span-1-of-9">
-          <h2 class="footer-second-bottom-info"><a href="#">About xtra.code.</h2></a>
-        </div>
-        <div class="col span-1-of-9">
-          <h2 class="footer-second-bottom-info"><a href="#">Careers</h2></a>
-        </div>
-        <div class="col span-1-of-9">
-          <h2 class="footer-second-bottom-info"><a href="#">Privacy Policy</h2></a>
+        <h2>ABOUT</h2>
+        <p class="long-copy">
+          Hello, my name is Joacim Palm. This is my personal website. I am a webdeveloper, currently studying Content Management System
+          at College. I am working towards increasing my skill in Front-End since I like the designing part the most but
+          I have a general knowledge in PHP as well.
+        </p>
+        <br>
+        <p class="long-copy">
+          This site is still under developement, more and more projects will be added in the future as I get more work done during
+          my school years and out in the world of coding!
+        </p>
+        <br>
+        <p class="long-copy">
+          My interests outside of making websites are music production, playing video games and graphic/motion design. I have acquired
+          skills in After Effects and Photoshop for many years as a hobby.
+        </p>
+        <img src="images/profile.png" alt="profile" class="profile center">
+        <div class="profile-links">
+          <a href="https://www.facebook.com/joacim.palm">
+            <img src="images/facebook.svg" class="sm-icon" width="30" alt="">
+          </a>
+          <a href="https://www.linkedin.com/in/joacim-palm-44a696132/">
+            <img src="images/linkedin.svg" class="sm-icon" width="30" alt="">
+          </a>
+          <a href="https://twitter.com/Joacim_Palm">
+            <img src="images/twitter.svg" class="sm-icon" width="30" alt="">
+          </a>
         </div>
       </div>
-      <p class="disclaimer-info">All prices are in US dollars</p>
-      <p class="disclaimer-info">&copy; XTRA.CODE. Pty Ltd. Trademarks and brands are the property of their respective owners.</p>
-    </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="row">
+        <h2>PORTFOLIO</h2>
+      </div>
+      <div class="row">
+        <ul class="portfolio-showcase row clearfix">
+          <li>
+            <figure class="portfolio-photo">
+              <img src="images/enso.jpg" alt="enso">
+            </figure>
+          </li>
+          <li>
+            <figure class="portfolio-photo">
+              <img src="images/livechat.jpg" alt="livechat">
+            </figure>
+          </li>
+          <li>
+            <figure class="portfolio-photo">
+              <img src="images/minnesota.jpg" alt="minnesota">
+            </figure>
+          </li>
+          <li>
+            <figure class="portfolio-photo">
+              <img src="images/geek.jpg" alt="geek">
+            </figure>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <ul class="portfolio-showcase row clearfix">
+          <li>
+            <figure class="portfolio-photo">
+              <img src="images/specialk.jpg" alt="specialk">
+            </figure>
+          </li>
+          <li>
+            <figure class="portfolio-photo">
+              <img src="images/nodejs.jpg" alt="nodejs">
+            </figure>
+          </li>
+          <li>
+            <figure class="portfolio-photo">
+              <img src="images/cittasolutions.jpg" alt="cittasolutions">
+            </figure>
+          </li>
+          <li>
+            <figure class="portfolio-photo">
+              <img src="images/zalando.jpg" alt="zalando">
+            </figure>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <ul class="portfolio-showcase row clearfix">
+          <li>
+            <figure class="portfolio-photo">
+              <img src="images/fedex.jpg" alt="fedex">
+            </figure>
+          </li>
+          <li>
+            <figure class="portfolio-photo">
+              <img src="images/zuubat.jpg" alt="zuubat">
+            </figure>
+          </li>
+          <li>
+            <figure class="portfolio-photo">
+              <img src="images/intel.jpg" alt="intel">
+            </figure>
+          </li>
+          <li>
+            <figure class="portfolio-photo">
+              <img src="images/cyberark.jpg" alt="cyberark">
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="my-experience" id="workexperience">
+      <div class="row">
+        <h2>MY EXPERIENCE</h2>
+      </div>
+      <!-- h2 row -->
+      <div class="row">
+        <!-- content row -->
+        <p class="exp-info">
+          Below you'll find the languages I am experienced with. I have mostly been coding in HTML and CSS with a touch of JavaScript
+          and PHP, both procedural and Object-Oriented Programming.
+        </p>
+        <br>
+        <p class="exp-info">
+          My code is semantically written and I always listen to what the customer wants. I also believe in a non-cluttered design
+          with minimalistic features.
+        </p>
+        <br>
+        <p class="exp-info">
+          I collaborate with clients and colleagues to nurture and transform ideas into well thought out design.
+        </p>
+        <div class="xp-icons">
+          <div class="col span-1-of-4">
+            <embed src="images/html-icon.svg" alt="html-icon" class="code-icons html-icon">
+          </div>
+          <div class="col span-1-of-4">
+            <embed src="images/css-icon.svg" alt="css-icon" class="code-icons css-icon">
+          </div>
+          <div class="col span-1-of-4">
+            <embed src="images/js-icon.svg" alt="js-icon" class="code-icons js-icon">
+          </div>
+          <div class="col span-1-of-4">
+            <embed src="images/php-icon.svg" alt="php-icon" class="code-icons php-icon">
+          </div>
+        </div>
+      </div>
+      <!-- /content row div -->
+    </section>
+
+
+    <section class="contact" id="contact">
+      <div class="row">
+        <div class="container">
+          <form action="" method="post" id="form-contact">
+            <h2 class="contact-us">CONTACT</h2>
+            <fieldset>
+              <input placeholder="Your Name" type="text">
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Email Adress" type="email">
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Phone Number (optional)" type="tel">
+            </fieldset>
+            <fieldset>
+              <textarea placeholder="Your Message" type="email"></textarea>
+            </fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="row">
+        <ul class="footer-social-icons">
+          <li>
+            <a href="">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-twitter-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-google-plus-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-linkedin-square"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-nav">
+          <li>
+            <a class="nav-link scroll" href="#home">HOME</a>
+          </li>
+          <li>
+            <a class="nav-link scroll" href="#about">ABOUT</a>
+          </li>
+          <li>
+            <a class="nav-link scroll" href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li>
+            <a class="nav-link scroll" href="#workexperience">WORK EXPERIENCE</a>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <p class="copyright">
+          Copyright &copy; 2018 by Joacim Palm. All rights reserved.
+        </p>
+      </div>
+    </footer>
   </div>
 </body>
 
